@@ -40,11 +40,21 @@ body {
 
 *{
 	--main-color: rgb(255, 217, 0);
+	--primary-color: #fdcf08;
+	--text-color:#010002;
 }
 
 .form-section{
 	margin: 4% 10%;
 
+}
+
+
+.sub-head{
+	background: url(/img/myhero.jpg);
+	background-size: cover;
+	padding: 10px;
+	font-weight: bold;
 }
 
 h1,
@@ -285,12 +295,14 @@ ol {
 -----------------------*/
 
 .header {
-	background: rgba(42, 1, 74, 0.5);
-	position: absolute;
+	position: relative;
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
 	left: 0;
 	top: 0;
 	width: 100%;
 	z-index: 9;
+	background: url(/img/HERO.jpg);
+	background-size: cover;
 }
 
 .header.header--normal {
@@ -299,7 +311,10 @@ ol {
 }
 
 .header__logo {
-	padding: 20px 0 25px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .header__logo a {
@@ -421,8 +436,6 @@ ol {
 -----------------------*/
 
 .hero {
-	padding-top: 400px;
-	padding-bottom: 295px;
 	position: relative;
 }
 
