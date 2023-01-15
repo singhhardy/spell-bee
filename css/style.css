@@ -61,8 +61,10 @@ body {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
-
+	justify-content: space-evenly;
+	margin: 40px 0;
+	box-shadow: 1px 5px 4px rgba(0,0,0,0.5);
+	background-image: linear-gradient(to bottom right, rgb(255, 221, 0), rgb(34, 0, 255));
 }
 
 
@@ -1725,7 +1727,6 @@ ol {
 	font-size: 18px;
 	color: #ffffff;
 	font-weight: 700;
-	display: inline-block;
 	padding: 14px 25px 12px 30px;
 	background: #5c00ce;
 	float: right;
