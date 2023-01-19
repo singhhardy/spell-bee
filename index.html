@@ -145,7 +145,7 @@
     <!-- FORM SECTION -->
 
     <h3 class="text-center sub-head text-light ">SUBMIT FORM HERE</h3>
-    <form action="https://formsubmit.co/spellbeecarnival@gmail.com" method="POST" enctype="multipart/form-data" class="form-section" id="form">
+    <form action="https://formsubmit.co/singhhardy724@gmail.com" method="POST" enctype="multipart/form-data" class="form-section" id="form">
         <!-- 
             Student Name
         Date of Birth 
@@ -222,7 +222,7 @@
                 <label for="formFile" class="form-label">Payment Screenshot</label>
                 <input class="form-control" name="screenshot" type="file" id="formFile" accept="image/png, image/jpeg, image/jpg" required>
               </div>
-              <button type="submit" class="form-btn primary-btn">submit</button>
+              <button type="submit" id="submit" class="form-btn primary-btn">submit</button>
             </form>
         
     <!-- BRAND LOGO -->
@@ -315,6 +315,29 @@
         </div>
     </footer>
     <!-- Footer Section End -->
+
+    <script>
+   const form = document.querySelector("#form")
+   const submitButton = document.querySelector("#submit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbzZAue0qAq48ND4cezs3t8jadfO-2GU0l4UhmDZ5UU0WTFUkAMb9uosZwUC9Q2WukKt/exec'
+
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
+     e.preventDefault()
+     let requestBody = new FormData(form)
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+       .then(response => {
+          alert('Success!', response)
+          submitButton.disabled = false
+         })
+       .catch(error => {
+       alert('Error!', error.message)
+         submitButton.disabled = false
+
+       }
+       )
+   })
+</script>
 
     <script src="data.js"></script>
 
