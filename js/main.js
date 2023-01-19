@@ -102,8 +102,8 @@
     --------------------*/
     // For demo preview
     var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var dd = String(today.getDate() + 10).padStart(2, '0');
+    var mm = String(today.getMonth() + 0.8).padStart(1, '0'); //January is 0!
     var yyyy = today.getFullYear();
 
     if(mm == 12) {
