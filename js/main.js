@@ -152,3 +152,17 @@
     });
 
 })(jQuery);
+
+
+// display form
+
+const main_submit = document.querySelector('.form-one')
+
+main_submit.addEventListener('click', showform)
+
+function showform(){
+    main_submit.innerHTML = 'Please wait'
+    setTimeout(() => {
+        main_submit.style.display = 'none'
+    }, 5000);
+}
